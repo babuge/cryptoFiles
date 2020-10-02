@@ -1,0 +1,10 @@
+# development
+*.depend
+*.layout
+*.cbp
+.vscode/
+# compiler
+obj/
+bin/
+*.o
+*.exe
