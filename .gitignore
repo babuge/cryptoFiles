@@ -2,9 +2,9 @@
 *.depend
 *.layout
 *.cbp
-.vscode/
+.vscode\
 # compiler
-obj/
-bin/
+obj\
+bin\
 *.o
 *.exe
