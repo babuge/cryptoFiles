@@ -1,6 +1,10 @@
 #pragma once
-#define _WIN32 1
-#define _LINUX 0
+#ifndef _WIN32
+#define _WIN32
+
+//#ifndef _LINUX
+//#define _LINUX
+
 #ifdef _WIN32
 #include <direct.h>
 #include <io.h>
@@ -35,6 +39,7 @@ void _split_whole_name(char *whole_name, char *fname, char *ext);
 
 #define FILE_MAX_PATH   260
 
+#endif // _LINUX or _WIN32
 typedef struct
 {
 	char drive[_MAX_DRIVE];

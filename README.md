@@ -7,9 +7,21 @@ en-de crypto files for windows &amp; linux, c language.
   if linux:    
   modify file ToolList.h     
   ```
-        // #define _WIN32 0    
-        #define _LINUX 1     
+		#ifndef _WIN32
+		#define _WIN32
+
+		//#ifndef _LINUX
+		//#define _LINUX
   ```    
+  
+  #### to  
+  ```   
+		//#ifndef _WIN32
+		//#define _WIN32
+
+		#ifndef _LINUX
+		#define _LINUX
+  ```   
   
 ###  encrypt or decrypt
     Create a file to de-or-encrypt other files, such as *.pem
