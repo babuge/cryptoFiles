@@ -4,7 +4,7 @@
 
 //#ifndef _LINUX
 //#define _LINUX
-
+#endif // _LINUX or _WIN32
 #ifdef _WIN32
 #include <direct.h>
 #include <io.h>
@@ -39,7 +39,7 @@ void _split_whole_name(char *whole_name, char *fname, char *ext);
 
 #define FILE_MAX_PATH   260
 
-#endif // _LINUX or _WIN32
+
 typedef struct
 {
 	char drive[_MAX_DRIVE];
