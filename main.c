@@ -118,7 +118,7 @@ int endecrypto(char en_or_de)
                     char out_file_dir[_MAX_DRIVE + _MAX_DIR];
                     strcpy(out_file, target_path_info.drive);
                     strcat(out_file, target_path_info.dir);
-                    strcat(out_file,DIR_SPLITE_CHAR);
+                    strcat(out_file, DIR_SPLITE_CHAR);
                     if (en_or_de == 'a')
                     {
                         strcat(out_file, "encryp");
